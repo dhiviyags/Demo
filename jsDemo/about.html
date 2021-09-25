@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About HTML API's</title>
+</head>
+
+<body>
+    <h1>About js</h1>
+    <button type="submit" onclick="handleDispatch();">Dispatch</button>
+    <div id='divDemoArea'>
+    </div>
+    <hr>
+    <button type="button" id="btnShowHide" onclick="handleAddClick(event)" onmouseover="showOnMouseOver()"
+        onmouseleave="hideOnMouseLeave()">Show</button>
+    <hr>
+
+    <div id="disappearingdiv" style="display: none;">
+        <img src="/assets/images/contact_banner_footer.jpg">
+    </div>
+    <hr>
+    <hr>
+    <div>
+        <img id="img1" src="assets/images/lister_logo.png" draggable="true" ondragstart="handledrag(event);">
+    </div>
+    <div style="border: 1px solid red;height: 200px;width: 200px;" ondragover="handleDragOver(event);"
+        ondrop="handleDrop(event);">
+        Drop here
+    </div>
+    <hr>
+    <h2>Geo location</h2>
+    <button type="button" onclick="handleLocateMe()">Locate Me</button>
+    <script src="/assets/scripts/demo.js"></script>
+</body>
+
+</html>
